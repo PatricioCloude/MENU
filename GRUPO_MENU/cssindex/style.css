@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+body{
+    background: url(fondo5.webp);
+    background-size: cover;
+    background-position: center ;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3);
+}
+.titulo{
+    padding: 10px;
+    width: auto;
+    height: auto;
+    margin:30px auto;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size:65px;
+    text-align:center;
+    color: #f8b3f4;
+    text-shadow: 0 0 10px #ff00ee,0 0 15px #ff00ee,0 0 20px #ff00ee;
+    font-family: 'Prompt',bold;
+    line-height:70px;
+    margin-bottom: 25px;
+}
+
+@font-face {
+    font-family:Breathing;
+    src: url(Breathing.ttf);
+}
+h2{
+    font-size:75px;
+    text-align:center;
+    position: relative;
+    color: rgb(161, 252, 250);
+    text-shadow: 0 0 5px #00F9FF,0 0 10px #00F9FF,0 0 15px #00F9FF;
+    font-family: 'Breathing', cursive; 
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    line-height:90px;
+    margin-bottom: 25px;
+}
+.opciones{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.329);
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border:10px double #f86aef;
+    border-radius: 2%;
+    box-shadow:0 0 10px #ff00ee,0 0 20px #ff00ee,0 0 30px #ff00ee;
+    animation: rojo-neon 2s infinite alternate;
+    transition: .10s ease;
+}
+
+
+
+@keyframes rojo-neon {
+    0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+		box-shadow: 9px 9px 18px #e734ff, 
+					 3px 3px 5px #6c006c, 
+					 -3px -3px 5px #69006c, 
+					 -9px -9px 27px #ff34ff;
+	}
+
+	10%, 15%, 60% {
+		box-shadow: none;
+	}
+}
